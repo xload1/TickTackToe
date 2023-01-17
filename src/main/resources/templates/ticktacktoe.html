@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{text-align: center;}
+        button{
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            color: white;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+<form action="/ticktacktoe/change" method="post">
+<button  th:text="${a11}" th:value="'00'" type="submit" name="a"/>
+<button  th:text="${a12}" th:value="'01'" type="submit" name="a"/>
+<button  th:text="${a13}" th:value="'02'" type="submit" name="a"/>
+<br>
+<button  th:text="${a21}" th:value="'10'" type="submit" name="a"/>
+<button  th:text="${a22}" th:value="'11'" type="submit" name="a"/>
+<button  th:text="${a23}" th:value="'12'" type="submit" name="a"/>
+<br>
+<button  th:text="${a31}" th:value="'20'" type="submit" name="a"/>
+<button  th:text="${a32}" th:value="'21'" type="submit" name="a"/>
+<button  th:text="${a33}" th:value="'22'" type="submit" name="a"/>
+</form>
+<h1 th:text="${check}"/>
+<form method="post" action="/ticktacktoe/clear">
+    <input type="submit" value="CLEAR">
+</form>
+</body>
+</html>
