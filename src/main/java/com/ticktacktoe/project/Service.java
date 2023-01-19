@@ -3,8 +3,6 @@ package com.ticktacktoe.project;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
 @org.springframework.stereotype.Service
 public class Service {
     char [][] board;
